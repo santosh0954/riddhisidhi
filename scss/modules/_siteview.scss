@@ -1,0 +1,32 @@
+.siteview {
+  article {
+    height: 200px;
+  }
+  .stretched-link {
+    z-index: 100;
+  }
+  .card {
+    overflow: hidden;
+    img {
+      transition: all 0.3s;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:hover img {
+      transform: scale(1.3);
+    }
+    &:hover .light-background {
+      background: rgba(0,0,0, 0);
+    }
+  }
+  .light-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    z-index: 2;
+    transition: all 0.3s;
+  }
+}

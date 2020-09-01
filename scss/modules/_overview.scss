@@ -1,0 +1,10 @@
+.overview {
+  
+  .card {
+    transition: all 0.2s;
+    &:hover {
+      background: $warning + 230 !important;
+      transform: translateY(-5px);
+    }
+  }
+}

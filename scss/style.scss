@@ -1,0 +1,12 @@
+$danger: #EF3126;
+$dark: #000;
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './modules/root';
+@import './modules/navbar';
+@import './modules/carousel';
+@import './modules/overview';
+@import './modules/siteview';
+@import './modules/pfeature';
+@import './modules/callus';
+@import './modules/contactus';
+@import './modules/enquiryform';

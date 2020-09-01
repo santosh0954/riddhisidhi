@@ -1,0 +1,4 @@
+# Author Santosh Jha
+# Ignoring node modules folder from git repository
+
+node_modules

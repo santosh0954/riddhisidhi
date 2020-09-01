@@ -1,0 +1,22 @@
+.carousel {
+  height: 80vh;
+  .carousel-inner {
+    height: 100%;
+    .carousel-item {
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .light-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+  }
+
+}

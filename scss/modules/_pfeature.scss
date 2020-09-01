@@ -1,0 +1,46 @@
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: scale(2);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.pfeature {
+  .card {
+    overflow: hidden;
+    &:hover .light-background {
+      background: rgba(0,0,0, 0);
+    }
+    &:hover figcaption {
+      display: block;
+    }
+  }
+  figcaption {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 30px);
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+    text-transform: uppercase;
+    background: $warning;
+    color: #fff;
+    z-index: 5;
+    animation: slideDown 0.4s ease;
+  }
+  .light-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    z-index: 2;
+    transition: all 0.3s;
+  }
+}

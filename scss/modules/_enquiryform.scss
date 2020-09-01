@@ -1,0 +1,12 @@
+.enquiryform {
+  input, textarea {
+    border-radius: 0;
+    // border: none;
+    border: 1px solid $dark;
+    outline: none;
+    &:focus {
+      outline: none;
+      border-color: $warning;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.navbar {
+  text-transform: uppercase;
+  @extend %text-shadow;
+  @extend %shadow;
+  @extend %custom-font;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  .nav-link {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+    .nav-link{
+      &:hover {
+        color: $danger !important;
+        border-bottom: 2px solid $danger;
+      }
+    }
+    .active {
+        border-bottom: 2px solid $danger;
+        color: $danger !important;
+
+  }
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  &+.carousel {
+    margin-top: 58px;
+  }
+}

@@ -1,0 +1,58 @@
+%text-shadow {
+  text-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.15) !important;
+}
+%custom-font {
+  font-family: 'Titillium Web', sans-serif;
+}
+%shadow {
+  box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.05), 0 4px 5px rgba($color: #000000, $alpha: 0.1) !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  // font-size: 80%;
+  background-color: #f8fefe !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  @extend %text-shadow;
+  @extend %custom-font;
+} 
+.shadow {
+  @extend %shadow;
+}
+.title {
+  position: relative;
+  padding-bottom: .5em;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 4rem;
+    border-bottom: 2px solid $warning;
+  }
+}
+.btn:hover {
+  @extend %shadow;
+}
+.to-the-top {
+  position: fixed;
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  @extend %shadow;
+  bottom: 10px;
+  right: 10px;
+  background: $warning;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1000;
+}
