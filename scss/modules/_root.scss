@@ -37,19 +37,22 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 2px solid $warning;
   }
 }
+.btn {
+  text-transform: uppercase;
+}
 .btn:hover {
   @extend %shadow;
 }
 .to-the-top {
   position: fixed;
   text-decoration: none;
-  color: white;
+  color: white !important;
   line-height: 50px;
   text-align: center;
   @extend %shadow;
   bottom: 10px;
   right: 10px;
-  background: $warning;
+  background: $warning !important;
   display: inline-block;
   width: 50px;
   height: 50px;
